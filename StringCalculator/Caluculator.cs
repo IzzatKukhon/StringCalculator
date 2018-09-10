@@ -19,9 +19,7 @@ namespace StringCalculator
 
             List<string> delemiters = new List<string> { ",", "\n" };
             Int64 result = 0;
-            char newDelem;
 
-            string newDelecmStr = string.Empty;
             if (string.IsNullOrEmpty(numbers))
                 return 0;
 
@@ -45,11 +43,6 @@ namespace StringCalculator
                         delemiters.Add(_match.Groups["delem"].Value);
                     }
                 }
-                //string[] DelemAndNumbers = numbers.Split('\n');
-                //
-                //newDelem = numbers[0];
-                //
-                //newDelecmStr = Convert.ToString(newDelem);
                 
             }
 
