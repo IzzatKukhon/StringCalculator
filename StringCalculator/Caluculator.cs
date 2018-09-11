@@ -16,7 +16,7 @@ namespace StringCalculator
 
         public static Int64 Add(string numbers)
         {
-
+            string _numbers = numbers;
             List<string> delemiters = new List<string> { ",", "\n" };
             Int64 result = 0;
 
@@ -50,10 +50,10 @@ namespace StringCalculator
 
             if (numberstoAdd != null && numberstoAdd.Count() == 0)
                 return 0;
-
+            
             var negatives = numberstoAdd.ToList<string>().Where(num => Convert.ToInt64(num) < 0).ToList();
             if(negatives != null && negatives.Count > 0)
-                throw new Exception(string.Format("negatives not allowed: ({0})", string.Join(", ", negatives)));
+                throw new Exception(string.Format("Invalid Input of ({1}), negatives not allowed: ({0})", string.Join(", ", negatives), _numbers));
 
             foreach (string _str in numberstoAdd)
             {

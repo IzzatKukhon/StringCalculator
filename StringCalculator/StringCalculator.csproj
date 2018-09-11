@@ -53,6 +53,7 @@
   <ItemGroup>
     <Content Include="Test results 1.PNG" />
     <Content Include="Test results 2.PNG" />
+    <Content Include="Test results 3.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
